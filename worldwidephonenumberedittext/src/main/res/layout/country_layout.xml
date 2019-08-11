@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_parent"
+    android:background="@drawable/drw_country_row_background">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_flag"
+        android:layout_width="@dimen/dim_country_flag_dimension"
+        android:layout_height="@dimen/dim_country_flag_dimension"
+        android:layout_marginLeft="@dimen/dim_country_layout_horizontal_margin"
+        android:layout_marginTop="@dimen/dim_country_layout_vertical_margin"
+        android:layout_marginBottom="@dimen/dim_country_layout_vertical_margin"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/dim_country_flag_dimension"/>
+    <TextView
+        android:id="@+id/txt_country_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_flag"
+        android:textSize="@dimen/dim_country_list_textview_size"
+        android:textColor="@color/col_light_black"
+        android:layout_marginRight="@dimen/dim_country_layout_horizontal_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/dim_country_layout_vertical_margin"
+        android:layout_marginBottom="@dimen/dim_country_layout_vertical_margin"/>
+
+</RelativeLayout>

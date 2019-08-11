@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="30dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This the default implementation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.emarkall.worldwidephonenumberedittext.WorldWidePhoneNumberEditText
+        android:id="@+id/edx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customization (Round flag, text bold and big, background added)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.emarkall.worldwidephonenumberedittext.WorldWidePhoneNumberEditText
+        android:id="@+id/edx2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drw_background"
+        app:flag_form="round_flag"
+        app:textSize="20sp"
+        app:textColor="#333"
+        app:textStyle="bold"
+        app:hintColor="#C2C2C2"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customization (Round flag, text bold and italic and big, background added)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.emarkall.worldwidephonenumberedittext.WorldWidePhoneNumberEditText
+        android:id="@+id/edx3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drw_background"
+        app:flag_form="round_flag"
+        app:textSize="20sp"
+        app:textColor="#333"
+        app:textStyle="bold|italic"
+        app:hintColor="#C2C2C2"
+        android:layout_marginBottom="40dp"
+        app:arrow_drawable="@drawable/ic_arrow_drop_down_24dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me"/>
+</LinearLayout>

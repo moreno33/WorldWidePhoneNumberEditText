@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emarkall.worldwidephonenumberedittext">
+    <application>
+        <activity
+            android:theme="@style/NoActionBar"
+            android:name=".CountryListActivity"/>
+    </application>
+</manifest>
