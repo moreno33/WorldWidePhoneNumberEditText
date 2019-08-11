@@ -95,5 +95,9 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+## FAQ
+- [x] Does the libary have internationalization for the name of the countries? Yes
+- [x] Does the libary format the phone number on the fly? Yes
+- [x] Does the library add the phone number hint for every country? Yes
 
 
