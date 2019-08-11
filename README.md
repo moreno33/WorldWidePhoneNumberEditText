@@ -48,5 +48,52 @@ dependencies {
         app:arrow_drawable="@drawable/ic_arrow_drop_down_24dp"/>
 ```
 
+### Java code
+```java
+public class MainActivity extends AppCompatActivity {
+
+    private WorldWidePhoneNumberEditText edx3;
+    private Button button;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        edx3= findViewById(R.id.edx3);
+        //Provide the iso code to set a default country.
+        edx3.setDefaultCountry("us");
+      
+        button= findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                /*
+                *You can validate it by calling is valide method, and if it's not valid
+                *you can add an error using setError method.
+                */
+                if(! edx3.isValid()){
+                    edx3.setError("Error");
+                }
+            }
+        });
+
+    }
+
+     /*
+      * You need to override the onActiviResult method so you can
+      * switch the country.
+      */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode== RESULT_OK){
+            if(requestCode== WorldWidePhoneNumberEditText.REQUEST_CODE){
+                Country country= (Country) data.getSerializableExtra(CountryListActivity.COUNTRY_EXTRA);
+                edx1.switchCountry(country.getmIsoCode());
+            }
+        }
+    }
+}
+```
 
 
