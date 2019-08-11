@@ -5,3 +5,18 @@ I understand this may be the situation of many other developers like me, for thi
 
 ### Quick Demo
 <img src="https://github.com/moreno33/WorldWidePhoneNumberEditText/blob/master/worldwidephonenumberedittext/src/main/res/drawable/Screenshot_20190811-153952.png" alt="" style="width=300px; margin-right=30px"/><img src="https://github.com/moreno33/WorldWidePhoneNumberEditText/blob/master/worldwidephonenumberedittext/src/main/res/drawable/Screenshot_20190811-153952.png" alt="" style="width=300px; margin-right=30px" /><img src="https://github.com/moreno33/WorldWidePhoneNumberEditText/blob/master/worldwidephonenumberedittext/src/main/res/drawable/Screenshot_20190811-153952.png" alt="" style="width=300px; margin-right=30px" /><img src="https://github.com/moreno33/WorldWidePhoneNumberEditText/blob/master/worldwidephonenumberedittext/src/main/res/drawable/Screenshot_20190811-153952.png" alt="" style="width=300px"/>
+
+### Add dependencies
+```gradle
+allprojects {
+  repositories {
+    ...
+    maven {
+      url 'https://jitpack.io' 
+    }
+  }
+}
+
+dependencies {
+  implementation 'com.github.moreno33:WorldWidePhoneNumberEditText:1.0'
+} ```
