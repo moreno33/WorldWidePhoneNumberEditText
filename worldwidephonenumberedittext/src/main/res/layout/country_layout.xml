@@ -8,13 +8,12 @@
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/img_flag"
-        android:layout_width="@dimen/dim_country_flag_dimension"
-        android:layout_height="@dimen/dim_country_flag_dimension"
+        android:layout_width="@dimen/dim_country_flag_dimension_horizontal"
+        android:layout_height="@dimen/dim_country_flag_dimension_vertical"
         android:layout_marginLeft="@dimen/dim_country_layout_horizontal_margin"
         android:layout_marginTop="@dimen/dim_country_layout_vertical_margin"
         android:layout_marginBottom="@dimen/dim_country_layout_vertical_margin"
-        android:scaleType="centerCrop"
-        app:riv_corner_radius="@dimen/dim_country_flag_dimension"/>
+        android:scaleType="centerCrop"/>
     <TextView
         android:id="@+id/txt_country_name"
         android:layout_width="match_parent"

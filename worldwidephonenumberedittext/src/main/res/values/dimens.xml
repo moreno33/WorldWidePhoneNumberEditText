@@ -4,6 +4,7 @@
     <dimen name="dim_country_flag_width">24dp</dimen>
     <dimen name="dim_country_layout_horizontal_margin">30dp</dimen>
     <dimen name="dim_country_layout_vertical_margin">15dp</dimen>
-    <dimen name="dim_country_flag_dimension">25dp</dimen>
+    <dimen name="dim_country_flag_dimension_vertical">20dp</dimen>
+    <dimen name="dim_country_flag_dimension_horizontal">30dp</dimen>
     <dimen name="dim_phone_edx_height">46dp</dimen>
 </resources>

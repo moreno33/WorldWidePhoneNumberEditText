@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Customization (Round flag, text bold and big, background added)"
+        android:text="Customization (Text bold and big, background added)"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginBottom="10dp"
@@ -38,7 +38,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/drw_background"
-        app:flag_form="round_flag"
         app:textSize="20sp"
         app:textColor="#333"
         app:textStyle="bold"
@@ -48,7 +47,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Customization (Round flag, text bold and italic and big, background added)"
+        android:text="Customization (Text bold and italic and big, background added)"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginBottom="10dp"
@@ -59,7 +58,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/drw_background"
-        app:flag_form="round_flag"
         app:textSize="20sp"
         app:textColor="#333"
         app:textStyle="bold|italic"

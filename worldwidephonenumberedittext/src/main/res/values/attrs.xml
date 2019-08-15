@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="WorldWidePhoneNumberEditText">
-        <attr name="flag_form" format="enum">
-            <enum name="square_flag" value="0"/>
-            <enum name="round_flag" value="1"/>
-        </attr>
+        <!--<attr name="flag_form" format="enum">-->
+            <!--<enum name="square_flag" value="0"/>-->
+            <!--<enum name="round_flag" value="1"/>-->
+        <!--</attr>-->
         <attr name="arrow_drawable" format="reference"/>
         <attr name="textColor" format="color"/>
         <attr name="hintColor" format="color"/>

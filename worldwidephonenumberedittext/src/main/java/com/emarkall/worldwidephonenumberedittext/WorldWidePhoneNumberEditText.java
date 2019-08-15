@@ -80,11 +80,6 @@ public class WorldWidePhoneNumberEditText extends LinearLayout {
     private Country country;
 
     /**
-     * The form of the flag, by default it's square.
-     */
-    private FlagForm flagForm;
-
-    /**
      * The size of the text.
      */
     private float textSize;
@@ -145,9 +140,6 @@ public class WorldWidePhoneNumberEditText extends LinearLayout {
             //Size
             textSize= typedArray.getDimensionPixelSize(R.styleable.WorldWidePhoneNumberEditText_textSize, 61);
 
-            //Flag form
-            flagForm= FlagForm.values()[typedArray.getInt(R.styleable.WorldWidePhoneNumberEditText_flag_form, 0)];
-
             //Text style
             textStyle= TextStyle.values()[typedArray.getInt(R.styleable.WorldWidePhoneNumberEditText_textStyle, 0)];
 
@@ -196,11 +188,6 @@ public class WorldWidePhoneNumberEditText extends LinearLayout {
         edxNumber.setTextColor(textColor);
         //add color to area code
         txtAreaCode.setTextColor(textColor);
-        //add drawable to arrow
-        switch (flagForm){
-            case ROUND_FLAG:
-                imgCountryFlag.setCornerRadius(50f);
-        }
         //add text style
         if(textStyle== TextStyle.BOLD){
             edxNumber.setTypeface(null, Typeface.BOLD);
