@@ -31,7 +31,11 @@
                     android:layout_height="@dimen/dim_phone_edx_height"
                     android:background="@drawable/drw_edx_search_country_list"
                     android:paddingLeft="15dp"
-                    android:drawableLeft="@drawable/drw_search_gray"/>
+                    android:drawableLeft="@drawable/drw_search_gray"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:hint="@string/str_search"
+                    android:drawablePadding="7dp"/>
             </androidx.cardview.widget.CardView>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>

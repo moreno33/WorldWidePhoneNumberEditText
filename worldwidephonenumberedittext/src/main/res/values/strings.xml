@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WorldWidePhoneNumberEditText</string>
+    <string name="str_search">Search...</string>
 </resources>
