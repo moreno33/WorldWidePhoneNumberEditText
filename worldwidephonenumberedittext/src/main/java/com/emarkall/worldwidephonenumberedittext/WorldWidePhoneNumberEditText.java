@@ -351,6 +351,14 @@ public class WorldWidePhoneNumberEditText extends LinearLayout {
         return textColor;
     }
 
+    public String getRegion(){
+        return country != null ? country.getmIsoCode().toUpperCase(): "";
+    }
+
+    public Integer getCountryCode(){
+        return  country != null ? country.getDialCode(): 1;
+    }
+
     public void setTextSize(float textSize) {
         this.textSize = textSize;
         addAttributes();
