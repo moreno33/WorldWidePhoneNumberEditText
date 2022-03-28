@@ -2,4 +2,5 @@
 <resources>
     <color name="col_light_gray">#F1F1F1</color>
     <color name="col_light_black">#333333</color>
+    <color name="col_search_box_border_color">#ebeef7</color>
 </resources>

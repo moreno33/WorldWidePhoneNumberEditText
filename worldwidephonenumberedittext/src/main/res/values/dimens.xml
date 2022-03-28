@@ -2,9 +2,9 @@
 <resources>
     <dimen name="dim_country_list_textview_size">18sp</dimen>
     <dimen name="dim_country_flag_width">24dp</dimen>
-    <dimen name="dim_country_layout_horizontal_margin">30dp</dimen>
+    <dimen name="dim_country_layout_horizontal_margin">20dp</dimen>
     <dimen name="dim_country_layout_vertical_margin">15dp</dimen>
     <dimen name="dim_country_flag_dimension_vertical">20dp</dimen>
     <dimen name="dim_country_flag_dimension_horizontal">30dp</dimen>
-    <dimen name="dim_phone_edx_height">46dp</dimen>
+    <dimen name="dim_phone_edx_height">52dp</dimen>
 </resources>

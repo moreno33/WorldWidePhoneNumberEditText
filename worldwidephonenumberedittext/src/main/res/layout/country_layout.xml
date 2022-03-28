@@ -6,24 +6,36 @@
     android:id="@+id/rlt_parent"
     android:background="@drawable/drw_country_row_background">
 
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/img_flag"
-        android:layout_width="@dimen/dim_country_flag_dimension_horizontal"
-        android:layout_height="@dimen/dim_country_flag_dimension_vertical"
-        android:layout_marginLeft="@dimen/dim_country_layout_horizontal_margin"
-        android:layout_marginTop="@dimen/dim_country_layout_vertical_margin"
-        android:layout_marginBottom="@dimen/dim_country_layout_vertical_margin"
-        android:scaleType="centerCrop"/>
-    <TextView
-        android:id="@+id/txt_country_name"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/img_flag"
-        android:textSize="@dimen/dim_country_list_textview_size"
-        android:textColor="@color/col_light_black"
-        android:layout_marginRight="@dimen/dim_country_layout_horizontal_margin"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="@dimen/dim_country_layout_vertical_margin"
-        android:layout_marginBottom="@dimen/dim_country_layout_vertical_margin"/>
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_flag"
+            android:layout_width="@dimen/dim_country_flag_dimension_horizontal"
+            android:layout_height="@dimen/dim_country_flag_dimension_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/flag_ht"
+            app:riv_corner_radius="@dimen/dim_country_flag_dimension_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/txt_country_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_flag"
+            android:textSize="@dimen/dim_country_list_textview_size"
+            android:textColor="@color/col_light_black"
+            android:text="Haiti"
+            app:layout_constraintStart_toEndOf="@id/img_flag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="15dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
