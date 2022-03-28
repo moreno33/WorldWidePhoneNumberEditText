@@ -1,8 +1,10 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'maven-publish'
+}
 
 android {
     compileSdkVersion 31
-    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.emarkall"
         minSdkVersion 15
@@ -10,6 +12,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility 11
+        targetCompatibility 11
     }
     buildTypes {
         release {
