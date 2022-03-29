@@ -1,4 +1,7 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
 
 android {
     compileSdkVersion 31
@@ -40,4 +43,17 @@ dependencies {
 
     //This is a google utility libray for phone number
     implementation 'com.googlecode.libphonenumber:libphonenumber:7.0.4'
+}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.moreno.wwpn'
+                artifactId = 'worldwidephonenumber'
+                version = '2.5'
+            }
+        }
+    }
 }
